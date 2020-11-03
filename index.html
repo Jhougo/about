@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js ">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mac桌面</title>
+
+  <meta name="description" content="mac桌面">
+  <meta name="keywords" content="mac桌面">
+  
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+  <!--layui样式-->
+  <link rel="stylesheet" href="lib/layer/mobile/need/layer.css">
+  <link rel="stylesheet" href="css/index.css">
+  <!-- style CSS 文件 -->
+  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="lib/font-awesome/fonts/fontawesome-webfont.svg">
+   <script src="lib/jquery/jquery.js"></script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</style>
+</head>
+<body style="background-image: url('image/2.jpg');">
+<div id="loadingDiv" style="position: absolute; left: 0px; width: 100%; height: 633px; top: 0px; background-color: rgb(0, 0, 0); opacity: 0.8; z-index: 10000; display: none;">
+  <div id="loadingContent" style="position: absolute; left: 651px; top: 284.5px;"><img src="image/loading.gif"></div>
+</div>
+<img src="8-s.jpg" style="display: none;">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle glyphicon glyphicon-home" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+          <ul class="dropdown-menu">
+            <li><a class="appclick" title="关于本机" app-name="about" app-width="450" app-height="450" href="#">关于本机</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a class="appclick" title="系统偏好设置" app-name="setting" app-width="800" app-height="450" href="#">系统偏好设置</a></li>
+            <li><a class="appclick" title="应用市场" app-name="appstore" app-width="800" app-height="500" href="#">App Store</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">锁屏</a></li>
+            <li><a href="#">退出</a></li>
+          </ul>
+        </li>
+          <!--<li><a class="appclick" title="demo" app-name="demo" app-width=600 app-height=450 href="#">实例</a></li>-->
+        </ul>
+        <ul class="nav navbar-nav navbar-nav-right">
+          <li><a class="glyphicon glyphicon-volume-up" aria-hidden="true" href="#"></a></li>
+          <li><a class="glyphicon glyphicon-eject" aria-hidden="true" href="#"></a></li>
+          <li><a class="currentTime" id="currentTime" href="#">周五晚上23:34</a></li>
+          <li><a class="glyphicon glyphicon-search" aria-hidden="true" href="#"></a></li>
+          <li><a class="glyphicon glyphicon-list" id="showRight" aria-hidden="true" href="#"></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-nav-right taskbar-nav">
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu" style="margin-top: 30px;">
+    <h3 id="currentDate">7月11日周五</h3>
+    <a class="appclick" title="最新文章" app-name="icloud" src="./home/article/lists?id=1" app-width="1100" app-height="600" href="#">最新文章</a>
+    <a class="appclick" title="热门视频" app-name="icloud" src="./home/article/lists?id=2" app-width="1100" app-height="600" href="#">热门视频</a>
+    <a class="appclick" title="火辣美图" app-name="icloud" src="./home/article/lists?id=3" app-width="1100" app-height="600" href="#">火辣美图</a>
+    <a class="appclick" title="开发文档" app-name="icloud" src="./home/article/lists?id=7" app-width="1100" app-height="600" href="#">开发文档</a>
+  </nav>
+  <div class="container desktop" id="desktop" current-path="public/user/muzi_ys/home/desktop/"
+style="height: 583px;">
+  <div class="app-list">
+    <div class="app-box middle appdblclick computer" title="我的电脑" app-path=""
+    app-name="finder" app-width="800" app-height="450" style="left: 10px; top: 10px; position: absolute; margin: 0px;">
+      <span class="app-icon">
+        <img class="img-rounded" src="icon/computer.png" alt="我的电脑" app-path=""
+        app-width="800" app-height="450">
+      </span>
+      <span class="app-name">
+        我的电脑
+      </span>
+      <div class="clear">
+      </div>
+    </div>
+    <div class="app-box middle appdblclick trash" title="回收站" app-path=""
+    app-name="trash" app-width="800" app-height="450" style="left: 10px; top: 120px; position: absolute; margin: 0px;">
+      <span class="app-icon">
+        <img class="img-rounded" src="icon/TrashIcon.png" alt="回收站" app-path=""
+        app-width="800" app-height="450">
+      </span>
+      <span class="app-name">
+        回收站
+      </span>
+      <div class="clear">
+      </div>
+    </div>
+    <div class="app-box middle appdblclick icloud" title="iCloud" app-path=""
+    app-name="icloud" app-width="1100" app-height="600" style="left: 10px; top: 230px; position: absolute; margin: 0px;">
+      <span class="app-icon">
+        <img class="img-rounded" src="icon/iCloud.png" alt="iCloud" app-path=""
+        app-width="1100" app-height="600">
+      </span>
+      <span class="app-name">
+        iCloud
+      </span>
+      <div class="clear">
+      </div>
+    </div>
+    <div class="app-box middle appdblclick tv" title="iTunes" app-path="" app-name="tv"
+    app-width="1100" app-height="600" style="left: 10px; top: 340px; position: absolute; margin: 0px;">
+      <span class="app-icon">
+        <img class="img-rounded" src="icon/iTunes.png" alt="iTunes" app-path="" app-width="1100"
+        app-height="600">
+      </span>
+      <span class="app-name">
+        iTunes
+      </span>
+      <div class="clear">
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+  <div id="dock">
+    <div id="dock-menu-wrapper" class="tb" style="position: fixed; top: auto; bottom: 0px; right: auto; left: 0px; margin: 0px; padding: 0px 3%; width: 99.9334%;">
+      <ul id="dock-menu-list" style="width: 100%; margin-bottom: -72px;">
+          <li class="setting">
+              <a class="appclick" title="系统设置" app-path="" app-name="setting" app-width="800" app-height="450"><span>系统设置</span> <img src="icon/PrefApp.png"></a>
+          </li>
+          <li class="appstore">
+              <a class="appclick" title="应用中心" app-path="" app-name="appstore" app-width="800" app-height="560"><span>应用中心</span> <img src="icon/AppStore.png"></a>
+          </li>
+          <li class="finder">
+              <a class="appclick" title="Finder" app-path="" app-name="finder" app-width="800" app-height="450"><span>Finder</span> <img src="icon/Finder.png"></a>
+          </li>
+          <li class="game">
+              <a class="appclick" title="游戏中心" app-path="" app-name="game" app-width="650" app-height="500"><span>游戏中心</span> <img src="icon/GameCenter.png"></a>
+          </li>
+      </ul>
+      <div class="menu-perspective" style="width: 100%;">
+          <div class="menu-board metal-gradient" style="min-width: 216px;"></div>
+      </div>
+    </div>
+  <!--引入插件样式开始-->
+  <link rel="stylesheet" href="css/dockmenu.css">
+  <link rel="stylesheet" href="css/context.standalone.css">
+  <link rel="stylesheet" href="css/component.css">
+  <!--引入插件样式结束-->
+</div>
+<ul class="dropdown-menu dropdown-context compressed-context" id="dropdown-1502465574011" style="top: 248px; left: 862px;">
+    <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">查看</a>
+        <ul class="dropdown-menu dropdown-context dropdown-context-sub compressed-context" id="dropdown-1502465574011">
+            <li>
+                <a tabindex="-1" href="#" id="event-133590224048236450" name="event-133590224048236450">自动对齐</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-70662458411969780" name="event-70662458411969780">刷新</a>
+    </li>
+    <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">新建</a>
+        <ul class="dropdown-menu dropdown-context dropdown-context-sub compressed-context" id="dropdown-1502465574011">
+            <li>
+                <a tabindex="-1" href="#" id="event-33912150471385988" name="event-33912150471385988">文件夹</a>
+            </li>
+            <li>
+                <a tabindex="-1" href="#" id="event-95118090560627940" name="event-95118090560627940">文本文档</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-90003697746693120" name="event-90003697746693120">粘贴</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-63872816483290900" name="event-63872816483290900">上传</a>
+    </li>
+</ul>
+<ul class="dropdown-menu dropdown-context compressed-context" id="dropdown-1502465574034" style="">
+    <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">查看</a>
+        <ul class="dropdown-menu dropdown-context dropdown-context-sub compressed-context" id="dropdown-1502465574034">
+            <li>
+                <a tabindex="-1" href="#" id="event-49524270251374630" name="event-49524270251374630">自动对齐</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a tabindex="-1" href="#">刷新</a>
+    </li>
+    <li class="dropdown-submenu">
+        <a tabindex="-1" href="#">新建</a>
+        <ul class="dropdown-menu dropdown-context dropdown-context-sub compressed-context" id="dropdown-1502465574034">
+            <li>
+                <a tabindex="-1" href="#" id="event-138902942319813100" name="event-138902942319813100">文件夹</a>
+            </li>
+            <li>
+                <a tabindex="-1" href="#" id="event-52913832586470290" name="event-52913832586470290">文本文档</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-15553523622451728" name="event-15553523622451728">粘贴</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-98860732306192160" name="event-98860732306192160">上传</a>
+    </li>
+</ul>
+<ul class="dropdown-menu dropdown-context compressed-context" id="dropdown-1502465574041" style="">
+    <li>
+        <a tabindex="-1" href="#" id="event-32837887586261950" name="event-32837887586261950">打开</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-57488840259645570" name="event-57488840259645570">剪切</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-131211821046923890" name="event-131211821046923890">复制</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-96039101958530450" name="event-96039101958530450">删除</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-20981931741552390" name="event-20981931741552390">重命名</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-141542774334245730" name="event-141542774334245730">属性</a>
+    </li>
+</ul>
+<ul class="dropdown-menu dropdown-context compressed-context" id="dropdown-1502465574048" style="">
+    <li>
+        <a tabindex="-1" href="#" id="event-26583123401648956" name="event-26583123401648956">打开</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-84007357641857650" name="event-84007357641857650">剪切</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-69125436130938410" name="event-69125436130938410">复制</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-92066582981184400" name="event-92066582981184400">删除</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-60936998752441576" name="event-60936998752441576">重命名</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-15216971334008784" name="event-15216971334008784">下载</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-10084548933057160" name="event-10084548933057160">属性</a>
+    </li>
+</ul>
+<ul class="dropdown-menu dropdown-context compressed-context" id="dropdown-1502465574055" style="">
+    <li>
+        <a tabindex="-1" href="#" id="event-45076972152828110" name="event-45076972152828110">打开</a>
+    </li>
+</ul>
+<ul class="dropdown-menu dropdown-context compressed-context" id="dropdown-1502465574057" style="">
+    <li>
+        <a tabindex="-1" href="#" id="event-128378170975385810" name="event-128378170975385810">打开</a>
+    </li>
+    <li>
+        <a tabindex="-1" href="#" id="event-118086281793402900" name="event-118086281793402900">清空回收站</a>
+    </li>
+</ul>
+<ul class="dropdown-menu dropdown-context compressed-context" id="dropdown-1502465574063" style="">
+    <li>
+        <a tabindex="-1" href="#" id="event-67454694413177340" name="event-67454694413177340">清空回收站</a>
+    </li>
+</ul>
+<div class="layui-layer-move"></div>
+<div style="background: blue none repeat scroll 0% 0%; position: absolute; opacity: 0.2; left: 799px; top: 193px; width: 0px; height: 0px;"></div>
+</body>
+</html>
